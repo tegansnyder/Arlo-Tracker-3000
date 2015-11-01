@@ -1,0 +1,203 @@
+#stats {
+	background-color: #222;
+}
+
+/*
+	Layout and colors are kindly inspired by Shopify's awesome Dashing dashboard
+	http://shopify.github.io/dashing/
+*/
+.gridster {
+	>ul {
+		list-style-type: none;
+
+		>li {
+			color: #FFF;
+			font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+			h1, h2, h3 {
+				margin: 0;
+				padding: 0;
+				text-align: center;
+			}
+
+			h1 {
+				margin-top: 14px;
+				font-size: 30px;
+				font-weight: 400;
+				color: rgba(255, 255, 255, 0.7);
+			}
+
+			h2 {
+				text-transform: uppercase;
+				font-size: 70px;
+				font-weight: 700;
+
+				span {
+					font-size: 25px;
+					text-transform: none;
+				}
+			}
+
+			h3 {
+				color: rgba(255, 255, 255, 0.7);
+				font-size: 22px;
+			}
+
+			p {
+				margin: 10px;
+				font-size: 16px;
+			}
+
+			.legend {
+				list-style-type: none;
+				margin: 0 0 0 32px;
+				padding: 0;
+
+				li {
+					float: left;
+					margin-right: 22px;
+				}
+			}
+
+			.last-fed-icon {
+				font-size: 270px;
+				display: block;
+				position: absolute;
+				color: rgba(255, 255, 255, 0.2);
+			}
+
+			&.box-profile {
+				background: #ec663c;
+
+				>h1 {
+					margin-top: 4px;
+					margin-bottom: 7px;
+				}
+
+				.status-bars {
+					width: 350px;
+
+					.progress {
+						margin-bottom: 10px;
+					}
+				}
+
+				.info {
+					position: relative;
+					width: 130px;
+
+					.sleep {
+						color: #EEE;
+					}
+
+					img {
+						display: block;
+						margin: 0 auto;
+					}
+
+					h1 {
+						font-size: 20px;
+						margin: 0 15px;
+
+						span {
+							margin-top: 8px;
+							display: block;
+							font-size: 14px;
+						}
+					}
+				}
+			}
+
+			&.box-diaper-chart {
+				background: #47bbb3;
+			}
+
+			&.box-diaper-stats {
+				background: #9c4274;
+
+				h1 {
+					margin-top: 32px;
+				}
+			}
+
+			&.box-feed-time {
+				background: #12b0c5;
+
+				h2 {
+					font-size: 55px;
+				}
+			}
+
+			&.box-last-fed {
+				background: #dc5945;
+			}
+
+			&.box-day-chart {
+				background: #ff9618;
+
+				.legend {
+					margin: 0 0 10px 15px;
+
+					&.time {
+						position: relative;
+						height: 10px;
+
+						li {
+							position: absolute;
+							top: 0;
+							border-left: 2px solid #FFF;
+							padding-left: 4px;
+
+							&:nth-child(1) {
+								left: 0%;
+							}
+
+							&:nth-child(2) {
+								left: 33.33%;
+							}
+
+							&:nth-child(3) {
+								left: 50%;
+							}
+
+							&:nth-child(4) {
+								left: 83.33%;
+							}
+						}
+					}
+				}
+
+				.progress {
+					margin: 0 12px;
+					position: relative;
+
+					.progress-bar {
+						cursor: pointer;
+						position: absolute;
+						top: 0;
+					}
+				}
+
+				.chart-description {
+					strong {
+						display: block;
+					}
+				}
+			}
+
+			&.box-info {
+				background: #4b4b4b;
+
+				a:link, a:visited {
+					color: #FFF;
+					margin-right: 17px;
+				}
+
+				a:hover {
+					color: #999;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}

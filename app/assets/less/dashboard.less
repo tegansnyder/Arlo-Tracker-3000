@@ -1,0 +1,74 @@
+@button-size: 10px;
+@button-size-small: 5px;
+@button-size-tiny: 3px;
+
+#dashboard {
+	text-align: center;
+
+	h1 {
+		@media @mobile {
+			font-size: 24px;
+			padding-top: 20px;
+		}
+
+		span {
+			color: #FF3D7F;
+		}
+	}
+
+	.primary-events {
+		button {
+			.button-size-styles(@button-size);
+
+			@media @mobile {
+				.button-size-styles(@button-size-small);
+			}
+		}
+	}
+
+	.secondary-events {
+		button {
+			.button-size-styles(@button-size-small);
+
+			@media @mobile {
+				.button-size-styles(@button-size-tiny);
+			}
+		}
+	}
+
+	button {
+		position: relative;
+		text-shadow: none;
+
+		.badge {
+			position: absolute;
+			left: 5px;
+			top: 177px;
+
+			@media @mobile {
+				left: 0px;
+				top: 83px;
+				font-size: 9px;
+				padding: 3px;
+			}
+		}
+
+		i {
+			display: block;
+		}
+	}
+}
+
+#milkModal {
+	.feed-types {
+		margin-bottom: 20px;
+	}
+
+	.feed-types, .bottle-options {
+		button {
+			span {
+				display: block;
+			}
+		}
+	}
+}

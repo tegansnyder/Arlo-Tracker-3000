@@ -1,0 +1,43 @@
+{
+    "name": "tegansnyder/arlotracker", 
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:tegansnyder/Laravel-Guard.git"
+        }
+    ],
+    "require": {
+        "laravel/framework": "4.1.*",
+        "way/generators": "3",
+        "illuminate/support": "4.1.x",
+        "tegansnyder/guard-laravel": "dev-master"
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "php artisan key:generate"
+        ], 
+        "post-update-cmd": [
+            "php artisan optimize"
+        ], 
+        "pre-update-cmd": [
+            "php artisan clear-compiled"
+        ], 
+        "post-install-cmd": [
+            "php artisan optimize"
+        ]
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "classmap": [
+            "app/commands", 
+            "app/controllers", 
+            "app/models", 
+            "app/database/migrations", 
+            "app/database/seeds", 
+            "app/tests/TestCase.php"
+        ],
+        "files": [
+            "app/helpers.php"
+        ]
+    }
+}
